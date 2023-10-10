@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | NFT preview card component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@200;300&display=swap");
+
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+      body {
+        font-size: 18px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        background-color: hsl(217, 54%, 11%);
+      }
+      main {
+        width: 260px;
+        height: 450px;
+        background-color: hsl(216, 50%, 16%);
+        padding: 15px;
+        border-radius: 20px;
+        box-shadow: 0px 0px 10px hsl(215, 32%, 27%);
+      }
+
+      img {
+        display: inline-block;
+        width: 250px;
+        margin-left: 5px;
+        border-radius: 10px;
+      }
+      h3 {
+        color: hsl(0, 0%, 100%);
+        font-family: "Outfit", sans-serif;
+        font-size: 21px;
+      }
+
+      h4 {
+        display: flex;
+        align-items: center;
+        color: hsl(178, 100%, 50%);
+      }
+
+      .Ethereum {
+        width: 10px;
+        margin-right: 5px;
+      }
+
+      .info-container {
+        display: flex;
+        flex-direction: row;
+        position: absolute;
+        justify-content: space-between; /* Mengatur agar elemen berada di sisi kiri dan kanan */
+        align-items: center; /* Mengatur agar elemen berada di tengah-tengah vertikal */
+      }
+
+      .clock {
+        float: left;
+        width: 20px;
+        margin-right: 5px;
+      }
+      h4 {
+        display: inline-block;
+        position: absolute;
+        margin-bottom: 85px;
+      }
+      h5 {
+        position: absolute;
+        width: 200px;
+        font-size: 18px;
+        font-family: "Outfit", sans-serif;
+        color: gray;
+        margin-left: 140px;
+        margin-top: -7px;
+      }
+      p {
+        font-weight: 600px;
+        font-family: "Outfit", sans-serif;
+        color: gray;
+      }
+      br {
+        font-weight: bold;
+      }
+      .profile-img {
+        width: 40px;
+        height: 100%;
+      }
+
+      hr {
+        display: inline-block;
+        font-weight: bold;
+        position: relative;
+        margin-top: 25px;
+      }
+
+      footer {
+        display: flex;
+        flex-direction: row;
+      }
+      h6 {
+        display: inline-block;
+        position: absolute;
+        margin-left: 50px;
+        margin-top: 10px;
+        font-size: 18px;
+        font-family: "Outfit", sans-serif;
+        color: gray;
+      }
+      span {
+        color: white;
+      }
+
+      @media screen and (max-width: 376px) {
+        img {
+          width: 100%;
+          margin-left: 0;
+          border-radius: 0;
+        }
+
+        h3 {
+          font-size: 18px;
+          margin-top: 10px; /* Add space above h3 */
+          margin-bottom: 5px; /* Add space below h3 */
+        }
+
+        h5 {
+          width: auto;
+          margin-left: 10;
+        }
+
+        h6 {
+          margin-left: 50px;
+          margin-top: 5px;
+          font-size: 16px;
+        }
+      }
+
+      hr {
+        margin-left: 0;
+        margin-top: 15px;
+      }
+
+      h6 {
+        margin-left: 10;
+        margin-top: 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="countainer">
+      <main>
+        <img
+          src="images/image-equilibrium.jpg"
+          alt="equilibrium"
+        />
+        <h3>Equilibrium #3429</h3>
+        <p>Our Equilibrium collection promotes balance and calm.</p>
+        <div class="info-container">
+          <h4>
+            <img
+              class="Ethereum"
+              src="images/icon-ethereum.svg"
+              alt="Etherium"
+            />0.041 ETH
+          </h4>
+          <div class="clock-container">
+            <h5>
+              <img
+                class="clock"
+                src="images/icon-clock.svg"
+                alt="icon-clock"
+              />3 days left
+            </h5>
+            <hr width="260" />
+            <footer>
+              <img
+                src="images/image-avatar.png"
+                class="profile-img"
+              />
+              <h6>creation by <span>Jules Wyvern</span></h6>
+            </footer>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
